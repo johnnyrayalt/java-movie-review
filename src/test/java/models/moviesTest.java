@@ -13,14 +13,17 @@ public class moviesTest {
     }
 
     @Test
-    public void NewMoviesObjectGetNameCorrectly_isShrek() {
+    public void getName_NewMoviesObjectGetNameCorrectly_isShrek() {
         Movie testMovie = setUpNewMoviesObject();
         testMovie.setName("Shrek");
         assertEquals("Shrek", testMovie.getName());
     }
 
     @Test
-    public void getBlurb() {
+    public void getBlurb_NewMoviesObjectGetBlurbCorrectly_isTrue() {
+        Movie testMovie = setUpNewMoviesObject();
+        testMovie.setBlurb("a love story about an ogre and a donkey");
+        assertEquals("a love story about an ogre and a donkey", testMovie.getBlurb());
     }
 
     @Test
