@@ -43,13 +43,13 @@ public class ReviewsTest {
     @Test
     public void getMoviesId_NewReviewObjectGetsMoviesIdCorrectly_isTrue() {
         Review review = setUpNewReviewObject();
-        review.setMoviesId(1);
-        assertEquals(1, review.getMoviesId());
+        review.setMovieId(1);
+        assertEquals(1, review.getMovieId());
     }
 
     //HELPER METHOD
     public Review setUpNewReviewObject(){
-        return new Review();
+        return new Review("string", 1);
     }
 
 }

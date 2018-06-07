@@ -7,34 +7,34 @@ public class Review {
     private String reviewer;
     private String review;
     private int rating;
-    private int moviesId;
+    private int movieId;
 
-    public Review() {
-        this.reviewer = reviewer;
+    public Review(String review, int movieId) {
         this.review = review;
+        this.reviewer = reviewer;
         this.rating = rating;
-        this.moviesId = moviesId;
+        this.movieId = movieId;
     }
 
 // GETTERS AND SETTERS FOR ID
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
+    // GETTERS AND SETTERS FOR REVIEW
+    public String getReview() { return review; }
+    public void setReview(String review) { this.review = review; }
+
 // GETTERS AND SETTERS FOR REVIEWER
     public String getReviewer() { return reviewer; }
     public void setReviewer(String reviewer) { this.reviewer = reviewer; }
-
-// GETTERS AND SETTERS FOR REVIEW
-    public String getReview() { return review; }
-    public void setReview(String review) { this.review = review; }
 
 // GETTERS AND SETTERS FOR RATING
     public int getRating() { return rating; }
     public void setRating(int rating) { this.rating = rating; }
 
 // GETTERS AND SETTERS FOR MOVIES_ID
-    public int getMoviesId() { return moviesId; }
-    public void setMoviesId(int moviesId) { this.moviesId = moviesId; }
+    public int getMovieId() { return movieId; }
+    public void setMovieId(int movieId) { this.movieId = movieId; }
 
 // GETTERS AND SETTERS FOR EQUALS & HASHCODE
     @Override
@@ -50,6 +50,6 @@ public class Review {
 
     @Override
     public int hashCode() {
-        return Objects.hash(reviewer, review, rating, id);
+        return Objects.hash(review, reviewer, rating, id);
     }
 }
