@@ -33,10 +33,6 @@ public class moviesTest {
         assertEquals(2001, testMovie.getYearReleased());
     }
 
-    @Test
-    public void getId() {
-    }
-
     // HELPER METHOD
     public Movie setUpNewMoviesObject() {
         return new Movie();
