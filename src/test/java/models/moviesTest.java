@@ -27,7 +27,10 @@ public class moviesTest {
     }
 
     @Test
-    public void getYearReleased() {
+    public void getYearReleased_NewMoviesObjectGetYearCorrectly_isTrue() {
+        Movie testMovie = setUpNewMoviesObject();
+        testMovie.setYearReleased(2001);
+        assertEquals(2001, testMovie.getYearReleased());
     }
 
     @Test
